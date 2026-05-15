@@ -3,22 +3,18 @@ bin/
 obj/
 out/
 
-# User Secrets
-# Windows: %APPDATA%\Microsoft\UserSecrets\<user_secrets_id>\secrets.json
-# Linux/macOS: ~/.microsoft/usersecrets/<user_secrets_id>/secrets.json
+# IDEs
+.vs/
+.vscode/
 
-# Configuration
+# Configuration & Secrets (DO NOT COMMIT ACTUAL VALUES)
+appsettings.json
 appsettings.Development.json
 secrets.json
 .env
 
-# IDEs
-.vs/
-.vscode/
-*.user
-*.userosscache
-*.sln.docstates
+# Google Cloud Service Account Keys
+vertex-key.json
 
-# OS
-.DS_Store
-Thumbs.db
+# Exceptions
+!appsettings.Example.json
