@@ -46,7 +46,8 @@ Making AI "do things" and visualizing the results.
 
 ## 🚀 How to Start
 1. **Clone the Repo:** `git clone https://github.com/muratsuzen/dotnet-ai-lab.git`
-2. **Setup Credentials:** Place `vertex-key.json` in the root and update `appsettings.json`.
-3. **Run the API:** `dotnet run`
+2. **Navigate to the Lab:** `cd Phase1-LLM-Foundations/AI.Architect.Gateway`
+3. **Setup Credentials:** Place `vertex-key.json` in the root and update `appsettings.json`.
+4. **Run the API:** `dotnet run`
 
 ---
