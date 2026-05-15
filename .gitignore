@@ -1,0 +1,24 @@
+# .NET Core
+bin/
+obj/
+out/
+
+# User Secrets
+# Windows: %APPDATA%\Microsoft\UserSecrets\<user_secrets_id>\secrets.json
+# Linux/macOS: ~/.microsoft/usersecrets/<user_secrets_id>/secrets.json
+
+# Configuration
+appsettings.Development.json
+secrets.json
+.env
+
+# IDEs
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
