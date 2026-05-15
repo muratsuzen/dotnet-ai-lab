@@ -1,77 +1,52 @@
 # .NET AI Architect Laboratory 🚀
 
-This repository is a hands-on **Learning Laboratory** documenting my strategic journey from a Senior .NET Developer to an **AI Architect**.
-
-The core objective of this lab is to move beyond simple chatbot implementations and master the design, orchestration, and scaling of enterprise-grade AI systems where the **LLM is a pluggable engine**, not a hardcoded dependency.
+**The .NET AI Architect Laboratory is a strategic blueprint for designing, orchestrating, and scaling model-agnostic AI ecosystems.** This repository focuses on building robust architectural substrates where LLMs are treated as pluggable engines rather than hardcoded dependencies.
 
 ## 🎯 Core Philosophy
-
-- **Provider Agnosticism:** Designing architectures that can switch between **Gemini, OpenAI, Anthropic, or Local LLMs (Ollama)** with minimal code changes.
-- **Abstraction-First:** Leveraging `Microsoft.Extensions.AI` to decouple application logic from specific LLM providers.
-- **Type Safety:** Enforcing strict data contracts between AI engines and .NET applications using **Strongly-Typed Schemas** (JSON Mapping).
+- **Provider Agnosticism:** Building a "Master Gateway" that can switch between **Gemini, OpenAI, Anthropic, and Local LLMs** with zero breaking changes.
+- **Type Safety:** Enforcing strict data contracts (C# Classes) regardless of which model provides the response.
+- **Abstraction-First:** Mastering `Microsoft.Extensions.AI` to decouple logic from specific providers.
 
 ---
 
 ## 🏗️ Technical Stack
-
 - **Framework:** .NET 10 (Minimal APIs)
 - **AI Abstraction:** `Microsoft.Extensions.AI`
 - **Orchestration:** Microsoft Semantic Kernel
-- **Reference Engine:** Gemini 2.5 Flash (via Vertex AI Enterprise)
-- **Planned Engines:** Claude 3.5 Sonnet, GPT-4o, Llama 3.1
-- **Frontend:** Angular 19+ (Architecture Dashboard)
+- **Active Engine:** Gemini 2.5 Flash (Phase 1 Reference)
+- **Upcoming Engines:** Claude 3.5 Sonnet, GPT-4o, Llama 3.1 (Ollama)
 
 ---
 
 ## 🗺️ The Roadmap
 
-### 🧱 Phase 1: LLM Fundamentals & Abstraction (In Progress)
+### 🧱 Phase 1: Foundations & Multi-Model Abstraction (In Progress)
+Focusing on the backend "Brain" and ensuring provider-independence.
+- [x] **Enterprise Setup (Gemini):** Connectivity via Google Vertex AI & IAM.
+- [x] **Secure Configuration:** Decoupled environment management.
+- [ ] **Structured Output:** Universal JSON mapping to C# classes (The "Type-Safe" core).
+- [ ] **Model Agnosticism:** Full implementation of `IChatClient` to support Claude/GPT.
+- [ ] **API Gateway:** A clean Minimal API acting as the central intelligence hub.
 
-Establishing the core connectivity and data-flow patterns for a multi-model future.
-
-- [x] **Enterprise Gateway:** Initial connectivity setup using Vertex AI as the reference provider.
-- [x] **Secure Configuration:** Provider-independent secret management and environment setup.
-- [ ] **Structured Output Management:** Mapping AI responses to C# Classes using JSON Schemas.
-- [ ] **Implementing IChatClient:** Transitioning to a fully model-agnostic `Microsoft.Extensions.AI` architecture.
-- [ ] **Universal AI Gateway:** A .NET Minimal API serving an Angular 19+ dashboard.
-
-### 🏗️ Phase 2: .NET AI Orchestration
-
-- [ ] Native C# Plugin Development for multi-model orchestration.
-- [ ] Intent Recognition and Tool Mapping.
-- [ ] Autonomous Process Orchestration via Semantic Kernel.
+### 🏗️ Phase 2: Action & UI Integration
+Making AI "do things" and visualizing the results.
+- [ ] **Orchestration:** Native C# Plugin development via Semantic Kernel.
+- [ ] **Function Calling:** Designing reliable tool-use patterns.
+- [ ] **Architecture Dashboard:** Introducing **Angular 19** to visualize model performance and outputs.
 
 ### 💾 Phase 3: Enterprise Memory (RAG)
-
-- [ ] Vector Database Implementation (PostgreSQL/pgvector or Qdrant).
-- [ ] Context Management & Retrieval Optimization.
+- [ ] Vector Database Integration (PostgreSQL/pgvector).
+- [ ] Semantic Retrieval optimization across different models.
 
 ### 🤖 Phase 4: Autonomous Agents & MCP
-
-- [ ] Building self-deciding agents.
-- [ ] Implementing the **Model Context Protocol (MCP)** with C#.
+- [ ] Building custom MCP Servers in C#.
+- [ ] Multi-agent workflow design.
 
 ---
 
-## 🚀 Current Lab Setup (Gemini/Vertex AI)
+## 🚀 How to Start
+1. **Clone the Repo:** `git clone https://github.com/muratsuzen/dotnet-ai-lab.git`
+2. **Setup Credentials:** Place `vertex-key.json` in the root and update `appsettings.json`.
+3. **Run the API:** `dotnet run`
 
-_While the architecture is designed to be agnostic, the current active lab utilizes Google Vertex AI for its enterprise stability._
-
-1. **Clone & Configure:**
-
-   ```bash
-   git clone https://github.com/muratsuzen/dotnet-ai-lab.git
-
-   ```
-
-2. **Setup Credentials:**
-
-Place your Google Cloud Service Account Key (vertex-key.json) in the root directory.
-
-Update appsettings.json with your ProjectId.
-
-3. **Run the Lab:**
-   ```bash
-   cd Phase1-LLM-Foundations/AI.Architect.Gateway
-   dotnet run
-   ```
+---
