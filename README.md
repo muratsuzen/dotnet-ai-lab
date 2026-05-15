@@ -49,11 +49,6 @@ Building self-deciding agents and implementing the Anthropic **Model Context Pro
 
 ---
 
-## 👨‍💻 Author
-**Murat** *Senior Software Developer & IT Manager with 10+ years of experience in .NET & Angular.* *Focusing on the intersection of Enterprise Architecture and Generative AI.*
-
----
-
 ### 🚀 How to Start
 ```bash
 # Clone the repository
