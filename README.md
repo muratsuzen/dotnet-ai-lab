@@ -75,7 +75,3 @@ Update appsettings.json with your ProjectId.
    cd Phase1-LLM-Foundations/AI.Architect.Gateway
    dotnet run
    ```
-
-## 💡 Architectural Vision: "The Model is Rented, the Context is Yours"
-
-In the era of rapidly evolving AI, the model itself is a commodity. The true value lies in the Architectural Substrate that governs how data is retrieved, how context is managed, and how models are swapped based on task-specific performance. This laboratory is the blueprint for that future.
